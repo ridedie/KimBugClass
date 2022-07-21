@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    
+    <!--From 사용자로부터 input, 입력창 태그-->
+    <h2>회원가입</h2>
+    <form action="#" nethod="post">
+
+        <label for="user-name">이름</label>
+        <input type="text" id="user-name" placeholder="이름을 입력하세요">
+
+        <!--placeholder태그는 값이 없을 때 input 안에 있는 텍스트
+        maxlength 태그는 최대글자 minlength는 최소글자
+        required 태그 무조건 작성해야 한다는 특성
+        value 태그는 초기값-->
+        <label for="user-id">아이디</label>
+        <input type="text" id="user-id" placeholder="아이디를 입력하세요" maxlength="15" minlength="3" required>
+
+        <label for="user-password">비밀번호</label>
+        <input type="password" id="user-password" placeholder="비밀번호를 입력하세요" minlength="6">
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" placeholder="이메일을 입력하세요">
+
+        <label for="age">나이</label>
+        <!-- min은 숫자의 최소값이다. minlength는 길의의 최소값-->
+        <input type="number" id="age" placeholder="나이를 입력하세요 (14세 이상만 입력하실 수 있습니다)" max="120" min="14" >
+
+        <label for="url">포토폴리오 URL</label>
+        <input type="url" id="url" placeholder="URL를 입력하세요">
+
+        <label for="file">프로필 사진</label>
+        <!--accept 태그는 확장자를 정할 수 있다. 그 이외는 첨부할 수 없다.-->
+        <input type="file" id="file" accept=".jpg, .png">
+
+
+        
+        <!--radio 버튼은 한개만 선택 가능하다 name, value를 꼭 작성해야한다.  -->
+        <h3>경력 선택</h3>
+        <label for="newcomer">신입</label>
+        <input type="radio" name="career" id="newcomer" value="0">
+        <label for="career">경력</label>
+        <input type="radio" name="career" id="career" value="1">
+
+
+        <!--checbox 다중선택이 가능하다-->
+        <h3>사용가능 언어</h3>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="c">C</label>
+        <input type="checkbox" id="c" name="skills" value="c">
+        <label for="java">Java</label>
+        <input type="checkbox" id=" java" name="skills" value="java">
+
+        <label for="area"></label>
+         <select name="area">
+            <option value="1">강남구</option>
+            <option value="2">송파구</option>
+            <option value="3">마포구</option>
+            <option value="4">종로구</option>
+            <option value="5">분당</option>
+            <option value="6">일산</option>
+        </select> 
+
+    <h3>자기소개</h3>
+    <!--Textarea 긴 글을 입력-->
+    
+    <label for="field">자기소개</label>
+    <textarea id="field" placeholder="자기소개를 입력하세요"></textarea>
+          
+    <!--버튼은 type을 무조건 적어야한다-->
+    <button type="button">버튼</button>
+    <button type="reset">다시쓰기</button>
+    <button type="submit">제출하기</button>
+    </form>
+</body>
+</html>

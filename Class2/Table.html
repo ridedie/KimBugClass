@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./styles2.css">
+</head>
+<body>
+    <!--table 표 th에 개수 td를 맞춰야한다 thean를 써주면 구조화가 분명히 되어 헤더가 무엇인지 정확하기 알 수 있다 코드를 작성하는 입장에서도 쉽다.-->
+    <table>
+        <thean>
+            <tr>
+                <th>ID</th>
+                <th>이름</th>
+                <th>개발분야</th>
+            </tr>
+        </thean>
+            <tr>
+                <td>0001</td>
+                <td>홍길동</td>
+                <td>백엔드</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>아무개</td>
+                <td>프론트엔드</td>
+            </tr>
+            <tr>
+                <td>0003</td>
+                <td>홍연길</td>
+                <td>풀스택</td>
+            </tr>
+    </table>
+
+      <!--세로에 대한 thead인지 가로에 대한 thead인지 브라우저에게 정확하게 정의하기 위해서 scope를 사용하면 좋다 사용자에게서는 보여지지 않는다-->
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">월</th>
+                <th scope="col">화</th>
+                <th scope="col">수</th>
+                <th scope="col">목</th>
+                <th scope="col">금</th>
+            </tr>
+    </thead>
+
+      <!--rowspan 속성으로 2칸을 차지하고 있기 때문에 2교시인 아래칸에는 적어주지 않아도 된다 rowspan은 세로칸 colspan은 가로칸 합병-->
+    <tbody>
+        <tr>
+            <th scope="row">1교시</th>
+            <td rowspan="2">왕초보 HMTL  &nap; CSS</td>
+            <td>모각코</td>
+            <td rowspan="2">왕초보 HMTL  &nap; CSS</td>
+            <td>모각코</td>
+            <td rowspan="2">왕초보 HMTL  &nap; CSS</td>
+        </tr>
+        <tr>
+            <th scope="row">2교시</th>
+            <!--<td rowspan="2">왕초보 HMTL  &nap; CSS</td>-->
+            <td rowspan="2">스킬업</td>
+            <!--<td rowspan="2">왕초보 HMTL  &nap; CSS</td>-->
+            <td rowspan="2">스킬업</td>
+            <!--<td rowspan="2">왕초보 HMTL  &nap; CSS</td>-->
+        </tr>
+
+        <tr>
+            <th scope="row">3교시</th>
+            <td>JS 시작반</td>
+            <!--<td rowspan="2">스킬업</td>-->
+            <td>JS 시작반</td>
+            <!--<td rowspan="2">스킬업</td>-->
+            <td>JS 시작반</td>
+        </tr>
+        <tr>
+            <th colspan="6" scope="row">점심시간</th>
+        </tr>
+        <tr>
+            <th scope="row">4교시</th>
+            <td>SASS 기초반</td>
+            <td rowspan="2">HMTL  &nap; CSS 포트폴리오반</td>
+            <td rowspan="2">Open Semiinar</td>
+            <td rowspan="2">HMTL  &nap; CSS 포트폴리오반</td>
+            <td>SASS 기초반</td>
+        </tr>
+        <tr>
+            <th scope="row">5교시</th>
+            <td>모각코</td>
+            <!--<td rowspan="2">HMTL  &nap; CSS 포트폴리오반</td>-->
+            <!--<td rowspan="2">Open Semiinar</td>-->
+            <!--<td rowspan="2">HMTL  &nap; CSS 포트폴리오반</td>-->
+            <td>모각코</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
