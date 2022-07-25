@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter markup challenge Tweet Form</title>
+</head>
+<body>
+    <!-- 디자인에 제목이 없어도, css로 보이지 않게 처리할 수 있기 때문에 꼭 써주어야 한다-->
+    <section>
+        <h1>Write a Tweet</h1>
+        <form action="#" method="post">
+            <img src="#" alt="@ride_die">
+            <textarea placeholder="What's a happening" maxlength="280"></textarea>
+
+            <button type="button" aria-label="Upload Files">
+                <!--icon-->
+            </button>
+            <input type="file" multiple accept="image/*, video/*"/>
+
+            <button type="button" aria-label="Search GIFs..">
+                <!--icon-->
+            </button>
+            <button type="button" aria-label="Create a poll">
+                <!--icon-->
+            </button>
+            <button type="button" aria-label="Choose emoji">
+                <!--icon-->
+            </button>
+
+            <strong aria-label="0 out of 280 characters"></strong>
+            <button type="button" aria-label="Add another tweet">
+                <!--icon-->
+            </button>
+            <button type="submit">Tweet</button>
+        </form>
+    </section>
+</body>
+</html>
