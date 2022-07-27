@@ -1,0 +1,19 @@
+/*항상 CSS를 작성할 때 box-sizing: border-box;를 준다 작성하지 않으면 박스는 content Box 값으로 인식해버린다. 그럴경우 padding을 추가하면 값이 늘어난다.*/
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 480px;
+    height: 480px;
+    background-color: antiquewhite;
+    color: blue;
+    padding-top: 40px;
+    padding-left: 50px;
+}

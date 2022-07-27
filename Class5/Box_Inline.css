@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Inline은 width, heigth, padding-top,padding-bottom, border-top, border-bottom, margin-top, margin-bottom 등등 사용 불가능*/
+
+span {
+    color: salmon;
+    background-color: bisque;
+    padding-left: 40px;
+    padding-right: 100px;
+}

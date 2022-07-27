@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+/*block box는 옆에 요소가 오지 못하게 옆의 공간에 마진을 준다(길막)*/
+
+.parent {
+    background-color: aliceblue;
+}
+
+.child 
+.other {
+    height: 50px;
+    color:brown;
+    line-height: 50px;
+    text-indent: 20px;
+}
+.child {
+    width: 50px;
+    background-color: aquamarine;
+}
+
+.other {
+    width: 100px;
+    background-color: coral;
+}

@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    color: salmon;
+    background-color: bisque;
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+}
