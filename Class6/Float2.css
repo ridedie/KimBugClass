@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Float 어긋난 레이아웃을 고칠 때 가상요소를 쓴다 가상요소에 clear를 쓴다. ::before, ::after 한 요소에 단 2개의 가상요소를 만들 수 있다 가상요소에서 꼭 써야할 것은 content다*/
+
+.pseudo::before {
+    content: ":)";
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.pseudo::after {
+    content: "!";
+    font-style: italic;
+}
+
+.parent {
+    width: 400px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+
+/*clear 속성은 display가 block인 요소만 사용가능하다*/
+.parent::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.child {
+    float: left;
+    width: 200px;
+    height: 200px;
+    line-height: 200px; 
+    text-align: center;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.red {
+    background-color: #ff4949;
+}
+
+.yellow {
+    background-color: #ffcb2c;
+}
+
+.blue {
+    background-color: #0066ff;
+}
+
+.other {
+    color: #fff;
+    background-color: black;
+}
