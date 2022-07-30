@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: beige;
+  }
+  
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+
+/*정렬하고자 하는 요소의 부모에 flex를 적용한다 flex를 정의하고 가로,세로 정렬인지 정의하고, 요소의 사이즈가 넘친다면 요소의 크기를 줄여서 한 줄로 유지를 할 것인지 아님 요소의 크기는 그대로 하되 요소를 다음 줄로 배치할 것인지 정의하면 된다 또한 여러가지 설정을 해도 된다.*/
+
+  .tab-menu {
+    display: flex;
+    /*기본값이기 때문에 적지 않아도 된다
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; */
+    align-items: center;
+    border-bottom:  1px solid silver;
+    max-width: 540px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: white;
+}
+
+.tab-menu-item {
+    margin-right: 16px;
+}
+
+.tab-menu-item a {
+    display: block;
+    padding: 16px 20px;
+}
+
+.tab-menu-item.selected a {
+    color: blue;
+    font-weight: 500;
+    border-bottom:  2px solid blue;
+}
