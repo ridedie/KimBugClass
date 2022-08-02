@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'myfont';
+    font-style:normal;
+    font-weight:300;
+  
+    src: url('./assets/NanumSquareRoundL.eot');
+    src: url('./assets/NanumSquareRoundL.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/NanumSquareRoundL.woff2') format('woff2'),
+         url('./assets/NanumSquareRoundL.woff') format('woff'),
+         url('./assets/NanumSquareRoundL.ttf')  format('truetype'),
+  }
+
+  @font-face {
+    font-family: 'myfont';
+    font-style:normal;
+    font-weight:100;
+  
+    src: url('./assets/NanumSquareRoundB.eot');
+    src: url('./assets/NanumSquareRoundB.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/NanumSquareRoundB.woff2') format('woff2'),
+         url('./assets/NanumSquareRoundB.woff') format('woff'),
+         url('./assets/NanumSquareRoundB.ttf')  format('truetype'),
+  }
+
+  @font-face {
+    font-family: 'myfont';
+    font-style:normal;
+    font-weight:800;
+  
+    src: url('./assets/NanumSquareRoundR.eot');
+    src: url('./assets/NanumSquareRoundR.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/NanumSquareRoundR.woff2') format('woff2'),
+         url('./assets/NanumSquareRoundR.woff') format('woff'),
+         url('./assets/NanumSquareRoundR.ttf')  format('truetype'),
+  }
