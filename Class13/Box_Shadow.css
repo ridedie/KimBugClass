@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.cancel-button {
+    width: 250px;
+    height: 100px;
+    background-color: #55b9f3;
+    border: #295975 solid 1px;
+    border-radius: 78px;
+    background: linear-gradient(145deg, #4da7db, #5bc6ff);
+    box-shadow:  5px 5px 33px #295975,
+                -5px -5px 33px #81ffff;
+} 
