@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.div {
+    width: 200px;
+    height: 300px;
+    background-color: darkolivegreen;
+}
+p {
+    width: 800px;
+    height: 400px;
+    background-color: blanchedalmond;
+    /* 알아서 스크롤로 만들어준다
+    overflow: auto; */
+    /* X, Y축을 따로 설정할 수 있다 */
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+blockquote {
+    width: 1200px;
+    height: 300px;
+    background-color: coral;
+    /* 스크롤이 되지 않지만 보이지 않는다 밑에 있는 내용은 아예 보이지 않는다 */
+    overflow: hidden;
+}
