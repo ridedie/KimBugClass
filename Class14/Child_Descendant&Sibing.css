@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 자식 자손 */
+section h1{
+    color: lightgray;
+}
+
+/* 직계 자식 */
+section > h1 {
+    font-size: 40px;
+    color: deeppink;
+}
+
+.actiove {
+    font-weight: 800;
+}
+
+/* class active 다음으로 오는 li 전부 다 선택 */
+.actiove ~ li {
+    color: green;
+}
+
+/* class actiove 다음으로 오는 li 요소 한개만 선택*/
+.actiove + li {
+    color: darkviolet;
+}

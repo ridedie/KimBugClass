@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 태그 선택
+h1 {
+    color: blue;
+}
+
+strong {
+    color: chartreuse;
+} */
+
+/* Class 선택
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+} */
+
+/* id 선택자
+#h {
+    font-style: italic;
+} */
+
+
+/* 복합 */
+.box#hh {
+    color: thistle;
+}

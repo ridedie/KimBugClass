@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/* 요소를 추가 해도 첫 번째 마지막에게  선택이된다*/
+li:first-child {
+    color: darksalmon;
+}
+
+li:last-child {
+    color: darkmagenta;
+}
+
+li:nth-child(4) {
+    color: green;
+}
+
+/* li:nth-child(2n-1) {
+    color: mediumblue;
+} */
