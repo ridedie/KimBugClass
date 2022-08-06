@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <!-- 12줄이 있고 container가 시작, row는 한 줄 container 다음, row 다음, col 다음, 요소 이 구조를 반드시 지켜야한다 형제를 col이 아닌 태그를 넣을 수는 없다-->
+    <!-- 모바일을 제작할 때는 1줄은 사용하지 않고 12줄 다 쓰거나 6줄을 많이 쓴다 -->
+    <div class="container">
+        <div class="row">
+            <!-- 하나의 줄 col-7이면 7줄 -->
+            <div class="col-1">
+                <!-- 요소 -->
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <div class="col-1">
+                <p>col-1</p>
+            </div>
+            <!-- 구조를 무조건 지킬 것 -->
+            <div class="col-12">
+                <div class="program">
+                    <p>col-12</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>col-4</p>
+            </div>
+            <div class="col-3">
+                <p>col-3</p>
+            </div>
+            <div class="col-5">
+                <p>col-5</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 12줄로 정의 했지만 웹사이즈가 커지면 6줄로 바뀐다 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <p>column</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
